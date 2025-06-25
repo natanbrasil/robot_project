@@ -1,0 +1,84 @@
+{"level":30,"time":"2025-06-25T12:50:45.478Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Listening on 127.0.0.1:59618"}
+(node:34084) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-25T12:50:45.876Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-25T12:50:46.400Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Adding browser to stack: chromium, version: 138.0.7204.15"}
+{"level":30,"time":"2025-06-25T12:50:46.402Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-25T12:50:46.401Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-25T12:50:46.412Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-06-25T12:50:46.413Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1200,\"height\":800}}"}
+{"level":30,"time":"2025-06-25T12:50:46.413Z","pid":34084,"hostname":"BR-NBRASIL","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-25T12:50:46.413Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Trace file: "}
+{"level":30,"time":"2025-06-25T12:50:46.444Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Changed active context"}
+{"level":30,"time":"2025-06-25T12:50:46.444Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method newContext"}
+{"level":30,"time":"2025-06-25T12:50:46.451Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-25T12:50:46.451Z","pid":34084,"hostname":"BR-NBRASIL","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-25T12:50:46.742Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-25T12:50:46.742Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Changed active page"}
+{"level":30,"time":"2025-06-25T12:50:49.593Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-25T12:50:49.611Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-25T12:50:49.611Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=a[data-testid='cadastrar'] in page."}
+{"level":30,"time":"2025-06-25T12:50:49.789Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method click"}
+{"level":30,"time":"2025-06-25T12:50:49.794Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-25T12:50:49.794Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=input[data-testid='nome'] in page."}
+{"level":30,"time":"2025-06-25T12:50:49.810Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-25T12:50:49.815Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-25T12:50:49.815Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=input[data-testid='email'] in page."}
+{"level":30,"time":"2025-06-25T12:50:49.831Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-25T12:50:49.837Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-25T12:50:49.837Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=input[data-testid='password'] in page."}
+{"level":30,"time":"2025-06-25T12:50:49.850Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-25T12:50:49.856Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2025-06-25T12:50:49.857Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=input[data-testid='checkbox'] in page."}
+{"level":30,"time":"2025-06-25T12:50:49.896Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2025-06-25T12:50:49.899Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-25T12:50:49.899Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=button[data-testid='cadastrar'] in page."}
+{"level":30,"time":"2025-06-25T12:50:49.946Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method click"}
+{"level":30,"time":"2025-06-25T12:50:49.953Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-25T12:50:49.954Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2025-06-25T12:50:54.855Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-25T12:50:54.858Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2025-06-25T12:50:54.858Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=button[data-testid='logout'] in page."}
+{"level":30,"time":"2025-06-25T12:50:54.875Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Element css=button[data-testid='logout'] is not editable: Error: locator.isEditable: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\\'logout\\']')\u001b[22m\n"}
+{"level":30,"time":"2025-06-25T12:50:54.875Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Checking checked state"}
+{"level":30,"time":"2025-06-25T12:50:54.897Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getElementStates"}
+{"level":30,"time":"2025-06-25T12:50:54.901Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-25T12:50:54.901Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=a[data-testid='listarUsuarios'] in page."}
+{"level":30,"time":"2025-06-25T12:50:54.933Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method click"}
+{"level":30,"time":"2025-06-25T12:50:54.938Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-06-25T12:50:54.938Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=table in page."}
+{"level":30,"time":"2025-06-25T12:50:54.949Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-06-25T12:50:54.951Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getTableCellIndex"}
+{"level":30,"time":"2025-06-25T12:50:54.952Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=table >> \"Nome\" in page."}
+{"level":30,"time":"2025-06-25T12:50:54.963Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getTableCellIndex"}
+{"level":30,"time":"2025-06-25T12:50:54.965Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getTableRowIndex"}
+{"level":30,"time":"2025-06-25T12:50:54.965Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=table >> \"austin64@example.org\" in page."}
+{"level":30,"time":"2025-06-25T12:50:55.810Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getTableRowIndex"}
+{"level":30,"time":"2025-06-25T12:50:55.812Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-06-25T12:50:55.813Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=table >> tr >> nth=30 >> > * >> nth=0 in page."}
+{"level":30,"time":"2025-06-25T12:50:55.818Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getElement"}
+{"level":30,"time":"2025-06-25T12:50:55.822Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-25T12:50:55.823Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Strict mode is enabled, find Locator with css=table >> tr >> nth=30 >> > * >> nth=0 in page."}
+{"level":30,"time":"2025-06-25T12:50:55.840Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Retrieved text for element css=table >> tr >> nth=30 >> > * >> nth=0 containing TesteM"}
+{"level":30,"time":"2025-06-25T12:50:55.840Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-25T12:50:55.845Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-25T12:50:55.846Z","pid":34084,"hostname":"BR-NBRASIL","Take screenshot with options: ":{"path":"C:\\Users\\nbrasil\\OneDrive - COGNYTE\\Documents\\robot_playwright\\robot_project\\tests\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-25T12:50:56.080Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-25T12:50:56.087Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.090Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.092Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.095Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.097Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.098Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.102Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.104Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.107Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Changed active context"}
+{"level":30,"time":"2025-06-25T12:50:56.107Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Changing current active page: page=4154995e-a5b2-427c-94c8-488561f178b1"}
+{"level":30,"time":"2025-06-25T12:50:56.107Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Changed active page"}
+{"level":30,"time":"2025-06-25T12:50:56.111Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-25T12:50:56.133Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Removed page=fae52d7d-8726-4d9a-beda-bd9b7a8124b2 from context=e9c75c43-949f-4b48-8eb5-ed1846f2ef51 page stack"}
+{"level":30,"time":"2025-06-25T12:50:56.181Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-25T12:50:56.193Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.193Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-25T12:50:56.274Z","pid":34084,"hostname":"BR-NBRASIL","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-25T12:50:56.718Z","pid":34084,"hostname":"BR-NBRASIL","msg":"End of node method closeAllBrowsers"}
