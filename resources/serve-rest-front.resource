@@ -21,7 +21,7 @@ Ir para o site
 
 Preencher os dados do novo usuário e cadastrar
     Click        css=a[data-testid='cadastrar']
-    Fill Text    css=input[data-testid='nome']    Deyvid LOUCAUM
+    Fill Text    css=input[data-testid='nome']    Teste QA
     ${EMAIL}      FakerLibrary.email
     Set Test Variable    ${EMAIL}
     Fill Text    css=input[data-testid='email']    ${EMAIL}
@@ -39,7 +39,7 @@ Acessar a lista de usuário
 
 Validar se o usuário aparece na listagem
     ${elemento}      Get Table Cell Element    css=table    "Nome"    "${EMAIL}"
-    ${usuario_nome}  Get Text  ${elemento}  ==  Deyvid LOUCAUM
+    ${usuario_nome}  Get Text  ${elemento}  ==  Teste QA
     Take Screenshot       fullPage=${true}    
 
 Cadastrar novo Produto
