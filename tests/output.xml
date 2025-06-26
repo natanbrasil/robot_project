@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-06-26T16:27:34.945069" rpa="false" schemaversion="5">
+<suite id="s1" name="Serve-Rest-Front" source="C:\Users\nbrasil\OneDrive - COGNYTE\Documents\robot_playwright\robot_project\tests\serve-rest-front.robot">
+<test id="s1-t1" name="Login com sucesso Serve Rest front" line="5">
+<kw name="Abrir o navegador" owner="serve-rest-front">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-26T16:27:35.519724" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nbrasil\\OneDrive - COGNYTE\\Documents\\robot_playwright\\robot_project\\tests\\browser\\traces\\temp\\e4cc6706-8b84-41ab-a971-91c426972c2d"}</msg>
+<msg time="2025-06-26T16:27:35.890215" level="INFO">Starting Browser process C:\Users\nbrasil\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57571</msg>
+<msg time="2025-06-26T16:27:37.926769" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nbrasil\\OneDrive - COGNYTE\\Documents\\robot_playwright\\robot_project\\tests\\browser\\traces\\temp\\e4cc6706-8b84-41ab-a971-91c426972c2d"}</msg>
+<arg>${BROWSER}</arg>
+<arg>${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-26T16:27:35.519009" elapsed="2.408020"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-06-26T16:27:37.929826" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1200,
+    "height": 800
+  }
+}</msg>
+<msg time="2025-06-26T16:27:37.968112" level="INFO">Successfully created context. </msg>
+<msg time="2025-06-26T16:27:37.968213" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<arg>viewport={'width': 1200, 'height': 800}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-06-26T16:27:37.927407" elapsed="0.040948"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:35.517894" elapsed="2.450661"/>
+</kw>
+<kw name="Ir para o site" owner="serve-rest-front">
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-26T16:27:42.101055" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
+<arg>${URL_SERV_REST}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-26T16:27:37.969899" elapsed="4.131417"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-06-26T16:27:42.110965" level="INFO">Title: 'Front - ServeRest'</msg>
+<msg time="2025-06-26T16:27:42.111181" level="INFO">${TITLE} = Front - ServeRest</msg>
+<var>${TITLE}</var>
+<arg>==</arg>
+<arg>Front - ServeRest</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.101518" elapsed="0.009695"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-26T16:27:42.111938" level="INFO">Front - ServeRest</msg>
+<arg>${TITLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.111533" elapsed="0.000496"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:37.969130" elapsed="4.143054"/>
+</kw>
+<kw name="Preencher os dados do novo usuário e cadastrar" owner="serve-rest-front">
+<kw name="Click" owner="Browser">
+<msg time="2025-06-26T16:27:42.113586" level="INFO">Clicks the element 'css=a[data-testid='cadastrar']'.</msg>
+<arg>css=a[data-testid='cadastrar']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.113117" elapsed="0.124405"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:42.238924" level="INFO">Fills the text 'Deyvid LOUCAUM' in the given field.</msg>
+<arg>css=input[data-testid='nome']</arg>
+<arg>Deyvid LOUCAUM</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.237806" elapsed="0.020277"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2025-06-26T16:27:42.259068" level="INFO">${EMAIL} = dgonzalez@example.net</msg>
+<var>${EMAIL}</var>
+<status status="PASS" start="2025-06-26T16:27:42.258376" elapsed="0.000736"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-06-26T16:27:42.259781" level="INFO">${EMAIL} = dgonzalez@example.net</msg>
+<arg>${EMAIL}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.259281" elapsed="0.000576"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:42.260539" level="INFO">Fills the text 'dgonzalez@example.net' in the given field.</msg>
+<arg>css=input[data-testid='email']</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.260012" elapsed="0.018209"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:42.279058" level="INFO">Fills the text 'teste123' in the given field.</msg>
+<arg>css=input[data-testid='password']</arg>
+<arg>teste123</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.278511" elapsed="0.018454"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>css=input[data-testid='checkbox']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.297218" elapsed="0.048164"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-26T16:27:42.346620" level="INFO">Clicks the element 'css=button[data-testid='cadastrar']'.</msg>
+<arg>css=button[data-testid='cadastrar']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.345743" elapsed="0.050158"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:42.112686" elapsed="0.283545"/>
+</kw>
+<kw name="Conferir se o usuário foi cadastrado" owner="serve-rest-front">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-26T16:27:47.849518" level="INFO">Waited for Element with selector h1 at state visible</msg>
+<arg>h1</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-26T16:27:42.397515" elapsed="5.452363"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-06-26T16:27:47.903635" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<arg>css=button[data-testid='logout']</arg>
+<arg>validate</arg>
+<arg>value &amp; visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:47.850313" elapsed="0.053471"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:42.396814" elapsed="5.507355"/>
+</kw>
+<kw name="Acessar a lista de usuário" owner="serve-rest-front">
+<kw name="Click" owner="Browser">
+<msg time="2025-06-26T16:27:47.905558" level="INFO">Clicks the element 'css=a[data-testid='listarUsuarios']'.</msg>
+<arg>css=a[data-testid='listarUsuarios']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:47.905028" elapsed="0.025225"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:47.904577" elapsed="0.025786"/>
+</kw>
+<kw name="Validar se o usuário aparece na listagem" owner="serve-rest-front">
+<kw name="Get Table Cell Element" owner="Browser">
+<msg time="2025-06-26T16:27:47.945067" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2025-06-26T16:27:48.803064" level="INFO">Locator found successfully.</msg>
+<msg time="2025-06-26T16:27:48.803248" level="INFO">${elemento} = css=table &gt;&gt; tr &gt;&gt; nth=307 &gt;&gt; &gt; * &gt;&gt; nth=0</msg>
+<var>${elemento}</var>
+<arg>css=table</arg>
+<arg>"Nome"</arg>
+<arg>"${EMAIL}"</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
+<status status="PASS" start="2025-06-26T16:27:47.931186" elapsed="0.872088"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-26T16:27:48.826693" level="INFO">Text: 'Deyvid LOUCAUM'</msg>
+<msg time="2025-06-26T16:27:48.826846" level="INFO">${usuario_nome} = Deyvid LOUCAUM</msg>
+<var>${usuario_nome}</var>
+<arg>${elemento}</arg>
+<arg>==</arg>
+<arg>Deyvid LOUCAUM</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:48.803449" elapsed="0.023424"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-26T16:27:50.212722" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>fullPage=${true}</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-26T16:27:48.827060" elapsed="1.385794"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:47.930824" elapsed="2.282129"/>
+</kw>
+<kw name="Cadastrar novo Produto" owner="serve-rest-front">
+<kw name="Click" owner="Browser">
+<msg time="2025-06-26T16:27:50.214168" level="INFO">Clicks the element 'css=[data-testid='cadastrar-produtos']'.</msg>
+<arg>css=[data-testid='cadastrar-produtos']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.213796" elapsed="0.056241"/>
+</kw>
+<kw name="Word" owner="FakerLibrary">
+<msg time="2025-06-26T16:27:50.270950" level="INFO">${NOME_PRODUTO} = head</msg>
+<var>${NOME_PRODUTO}</var>
+<doc>Generate a word.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.270388" elapsed="0.000600"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-06-26T16:27:50.271467" level="INFO">${NOME_PRODUTO} = head</msg>
+<arg>${NOME_PRODUTO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.271182" elapsed="0.000330"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:50.272134" level="INFO">Fills the text 'head' in the given field.</msg>
+<arg>css=input[data-testid='nome']</arg>
+<arg>${NOME_PRODUTO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.271633" elapsed="0.014580"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:50.287018" level="INFO">Fills the text '10' in the given field.</msg>
+<arg>css=input[data-testid='preco']</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.286414" elapsed="0.017132"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:50.304375" level="INFO">Fills the text 'Produto Teste Robot Framework' in the given field.</msg>
+<arg>css=textarea[data-testid='descricao']</arg>
+<arg>Produto Teste Robot Framework</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.303811" elapsed="0.013096"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-26T16:27:50.317770" level="INFO">Fills the text '5' in the given field.</msg>
+<arg>css=input[data-testid='quantity']</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.317158" elapsed="0.013419"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-26T16:27:50.331544" level="INFO">Clicks the element 'text="Cadastrar"'.</msg>
+<arg>text="Cadastrar"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.330864" elapsed="0.044510"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:50.213419" elapsed="0.162122"/>
+</kw>
+<kw name="Conferir que o produto aparece na listagem" owner="serve-rest-front">
+<kw name="Get Table Cell Element" owner="Browser">
+<msg time="2025-06-26T16:27:51.208933" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2025-06-26T16:27:51.447982" level="INFO">Locator found successfully.</msg>
+<msg time="2025-06-26T16:27:51.448255" level="INFO">${elemento} = css=table &gt;&gt; tr &gt;&gt; nth=126 &gt;&gt; &gt; * &gt;&gt; nth=2</msg>
+<var>${elemento}</var>
+<arg>css=table</arg>
+<arg>"Descrição"</arg>
+<arg>"${NOME_PRODUTO}"</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
+<status status="PASS" start="2025-06-26T16:27:50.376299" elapsed="1.072003"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-26T16:27:51.467104" level="INFO">Text: 'Produto Teste Robot Framework'</msg>
+<msg time="2025-06-26T16:27:51.467235" level="INFO">${descricao} = Produto Teste Robot Framework</msg>
+<var>${descricao}</var>
+<arg>${elemento}</arg>
+<arg>==</arg>
+<arg>Produto Teste Robot Framework</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-26T16:27:51.448544" elapsed="0.018713"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-26T16:27:52.775706" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>fullPage=${true}</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-26T16:27:51.467416" elapsed="1.308469"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:50.375916" elapsed="2.400113"/>
+</kw>
+<status status="PASS" start="2025-06-26T16:27:35.517045" elapsed="17.259397"/>
+</test>
+<status status="PASS" start="2025-06-26T16:27:34.946410" elapsed="17.943746"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Serve-Rest-Front">Serve-Rest-Front</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
