@@ -8,7 +8,6 @@ ${HEADLESS}  ${false}
 ${URL_SERV_REST}  https://front.serverest.dev/login
 
 
-
 *** Keywords ***
 Abrir o navegador
     New Browser    ${BROWSER}
