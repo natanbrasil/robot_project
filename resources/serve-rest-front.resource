@@ -22,7 +22,7 @@ Ir para o site
 
 Preencher os dados do novo usuário e cadastrar
     Click        css=a[data-testid='cadastrar']
-    Fill Text    css=input[data-testid='nome']    TesteM
+    Fill Text    css=input[data-testid='nome']    Deyvid LOUCAUM
     ${EMAIL}      FakerLibrary.email
     Set Test Variable    ${EMAIL}
     Fill Text    css=input[data-testid='email']    ${EMAIL}
@@ -40,6 +40,20 @@ Acessar a lista de usuário
 
 Validar se o usuário aparece na listagem
     ${elemento}      Get Table Cell Element    css=table    "Nome"    "${EMAIL}"
-    ${usuario_nome}  Get Text  ${elemento}  ==  TesteM
-    Highlight Elements    ${elemento}
+    ${usuario_nome}  Get Text  ${elemento}  ==  Deyvid LOUCAUM
     Take Screenshot       fullPage=${true}    
+
+Cadastrar novo Produto
+     Click    css=[data-testid='cadastrar-produtos']
+     ${NOME_PRODUTO}    FakerLibrary.Word
+     Set Test Variable  ${NOME_PRODUTO}
+     Fill Text          css=input[data-testid='nome']          ${NOME_PRODUTO}
+     Fill Text          css=input[data-testid='preco']         10
+     Fill Text          css=textarea[data-testid='descricao']  Produto Teste Robot Framework
+     Fill Text          css=input[data-testid='quantity']      5
+     Click              text="Cadastrar"
+
+Conferir que o produto aparece na listagem
+     ${elemento}   Get Table Cell Element    css=table    "Descrição"    "${NOME_PRODUTO}"
+     ${descricao}  Get Text  ${elemento}  ==  Produto Teste Robot Framework
+     Take Screenshot       fullPage=${true}
